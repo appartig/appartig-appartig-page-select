@@ -1,0 +1,49 @@
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+
+.dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}
+
+.aaps{
+
+	ol.aaps-list{
+		list-style-type: none;
+		margin-left: 0px;
+
+		&--not-ready{
+			display: none;
+		}
+
+		.aaps-item,
+		.placeholder{
+			background-color: #ffffff;
+			border: 1px #eeeeee solid;
+			margin-bottom: 10px;
+			line-height: 24px;
+			padding: 12px 18px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&:hover{
+				cursor: move;
+			}
+			
+			&.dragged,
+			&.placeholder{
+				background-color: #4c49ffa6;
+				border: 2px #4c49ff solid;
+			}
+
+			&__show{
+				label{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

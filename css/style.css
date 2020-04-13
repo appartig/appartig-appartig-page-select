@@ -1,0 +1,34 @@
+body.dragging, body.dragging * {
+  cursor: move !important; }
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000; }
+
+.aaps ol.aaps-list {
+  list-style-type: none;
+  margin-left: 0px; }
+  .aaps ol.aaps-list--not-ready {
+    display: none; }
+  .aaps ol.aaps-list .aaps-item,
+  .aaps ol.aaps-list .placeholder {
+    background-color: #ffffff;
+    border: 1px #eeeeee solid;
+    margin-bottom: 10px;
+    line-height: 24px;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .aaps ol.aaps-list .aaps-item:hover,
+    .aaps ol.aaps-list .placeholder:hover {
+      cursor: move; }
+    .aaps ol.aaps-list .aaps-item.dragged, .aaps ol.aaps-list .aaps-item.placeholder,
+    .aaps ol.aaps-list .placeholder.dragged,
+    .aaps ol.aaps-list .placeholder.placeholder {
+      background-color: #4c49ffa6;
+      border: 2px #4c49ff solid; }
+    .aaps ol.aaps-list .aaps-item__show label,
+    .aaps ol.aaps-list .placeholder__show label {
+      margin-right: 10px; }
