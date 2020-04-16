@@ -1,3 +1,2 @@
-# AppArtig Page Select
-
-A Wordpress Plugin for showing up a specified list of pages in a wordpress theme.
+# AppArtig Page Select Wordpress-Plugin
+A Wordpress Plugin for defining a set of pages (e.g. quicklinks on the front page)
