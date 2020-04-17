@@ -6,17 +6,21 @@ jQuery(document).ready(function(){
 });
 
 function initSortable(){
-	jQuery(".aaps-list").sortable({
+	jQuery(document).ready( function($) {
+	$(".aaps-list").sortable({
 		onDrop: function ($item, container, _super, event) {
 			$item.removeClass(container.group.options.draggedClass).removeAttr("style")
 			jQuery("body").removeClass(container.group.options.bodyClass)
 			createJson();
 		}
 	});
+});
 }
 
 function initJson(){
-	let jsonString = jQuery('#appartig_page_select_value').val() ?? "[]";
+	let jsonString = "[]";
+	if(jQuery('#appartig_page_select_value').val())
+		jsonString = jQuery('#appartig_page_select_value').val();
 	let json = JSON.parse(jsonString);
 
 	// Init if not exist
