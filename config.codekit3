@@ -7,8 +7,16 @@
 		"uuidString": "E6420F15-71CC-40C7-BFFC-E4BD1D2095BA"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/appartig_page_select.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -65,6 +73,25 @@
 		"oAP": "/js/app.min.js.map",
 		"oF": 0
 		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/scss/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -77,17 +104,6 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
-		},
-	"/vendor/jquery-sortable.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/vendor/jquery-sortable-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		}
 	},
 "hooks": [
@@ -96,7 +112,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 606334128.987082,
-	"displayValue": "appartig-page-select",
+	"displayValue": "appartig-appartig-page-select",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-tar",
 	"iconImageWasSetByUser": 0
@@ -535,9 +551,9 @@
 			}
 		},
 	"environmentVariablesString": "NODE_ENV:::production",
-	"esLintConfigFileHandlingType": 0,
+	"esLintConfigFileHandlingType": 1,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -694,6 +710,10 @@
 		"global-require": {
 			"active": 0,
 			"optionString": ""
+			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
 			"active": 0,
@@ -871,6 +891,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -896,6 +920,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -1199,6 +1227,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -1402,6 +1434,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,

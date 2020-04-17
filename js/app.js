@@ -6,15 +6,13 @@ jQuery(document).ready(function(){
 });
 
 function initSortable(){
-	jQuery(document).ready( function($) {
-	$(".aaps-list").sortable({
+	jQuery(".aaps-list").sortable({
 		onDrop: function ($item, container, _super, event) {
 			$item.removeClass(container.group.options.draggedClass).removeAttr("style")
 			jQuery("body").removeClass(container.group.options.bodyClass)
 			createJson();
 		}
 	});
-});
 }
 
 function initJson(){
