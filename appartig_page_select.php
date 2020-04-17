@@ -2,8 +2,8 @@
 	
 	/*
 		Plugin Name: AppArtig Page Select
-		Description: Plugin for 
-		Version:     1.0.1
+		Description: Plugin for defining a set of pages (e.g. quicklinks on the front page)
+		Version:     1.0.2
 		Author:      AppArtig e.U.
 		Author URI:  https://www.appartig.at
 		License:     APPARTIG/AGB
@@ -142,5 +142,3 @@
 		
 		return $pages;
 	}
-
-
