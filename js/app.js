@@ -16,7 +16,9 @@ function initSortable(){
 }
 
 function initJson(){
-	let jsonString = jQuery('#appartig_page_select_value').val() ?? "[]";
+	let jsonString = "[]";
+	if(jQuery('#appartig_page_select_value').val())
+		jsonString = jQuery('#appartig_page_select_value').val();
 	let json = JSON.parse(jsonString);
 
 	// Init if not exist

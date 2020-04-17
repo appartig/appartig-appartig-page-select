@@ -3,7 +3,7 @@
 	/*
 		Plugin Name: AppArtig Page Select
 		Description: Plugin for 
-		Version:     1.0.0
+		Version:     1.0.1
 		Author:      AppArtig e.U.
 		Author URI:  https://www.appartig.at
 		License:     APPARTIG/AGB
@@ -32,8 +32,8 @@
 	add_action('admin_enqueue_scripts', function() {
 		wp_enqueue_style('aaps_style_css', plugins_url('/css/style.css', __FILE__ ), null, '1.0.0');
 		
-        wp_enqueue_script('aaps_scripts_app', plugin_dir_url(__FILE__) . '/js/app.js', array(), '1.0.0', true);
-        wp_enqueue_script('aaps_scripts_sortable', plugin_dir_url(__FILE__) . '/vendor/jquery-sortable.js', array(), '0.9.13', true);
+		wp_enqueue_script( array("jquery", "jquery-ui-sortable") );
+        wp_enqueue_script('aaps_scripts_app', plugin_dir_url(__FILE__) . 'js/app.js', array(), '1.0.0', true);
 	});
 	
 
